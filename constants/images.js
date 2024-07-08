@@ -6,6 +6,7 @@ import logo from "../assets/images/logo.png";
 import logoSmall from "../assets/images/logo-small.png";
 import empty from "../assets/images/empty.png";
 import cat from "../assets/images/cat.jpg";
+
 import boy from "../assets/images/boy.jpg";
 import fish from "../assets/images/fish.jpg";
 import dragon from "../assets/images/dragon.png";

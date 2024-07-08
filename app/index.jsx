@@ -5,7 +5,7 @@ import imgae from "../constants/images";
 import CustomButton from "../components/CustomButton";
 import { StatusBar } from "expo-status-bar";
 import { router } from "expo-router";
-
+import * as Animatable from "react-native-animatable";
 const App = () => {
   return (
     <SafeAreaView className="h-full  bg-gray-950 px-5">
@@ -33,10 +33,13 @@ const App = () => {
             />
           </View>
           <View className="mt-4">
-            <Text className="text-center text-gray-200 text-sm">
+            <Animatable.Text
+              animation={"zoomInUp"}
+              className="text-center text-gray-200 text-sm"
+            >
               Where Creativity Meets Innovation: Embark on a Journey of
               Limitless Exploration with Aora
-            </Text>
+            </Animatable.Text>
           </View>
           <CustomButton
             onPress={() => router.push("/sign-in")}

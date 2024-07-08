@@ -10,8 +10,10 @@ const VideoCard = ({ item }) => {
             <Text className="text-lg">{`${item.name}`.slice(0, 1)}</Text>
           </View>
           <View>
-            <Text className="text-gray-50 text-sm">{item.title}</Text>
-            <Text className="text-white text-base">{item.name}</Text>
+            <Text className="text-white text-base font-semibold">
+              {item.title}
+            </Text>
+            <Text className="text-gray-200 text-sm">{item.name}</Text>
           </View>
         </View>
         <Image
