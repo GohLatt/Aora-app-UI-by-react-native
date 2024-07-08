@@ -31,7 +31,7 @@ const TabLayout = () => {
           tabBarActiveTintColor: "#FFA001",
           tabBarStyle: {
             backgroundColor: "#333",
-            height: 84,
+            height: 74,
           },
         }}
       >
@@ -60,7 +60,7 @@ const TabLayout = () => {
               <TabIcon
                 name="Create"
                 color={color}
-                icon={icons.bookmark}
+                icon={icons.plus}
                 focused={focused}
               />
             ),
@@ -75,7 +75,7 @@ const TabLayout = () => {
               <TabIcon
                 name="Profile"
                 color={color}
-                icon={icons.bookmark}
+                icon={icons.profile}
                 focused={focused}
               />
             ),

@@ -1,9 +1,10 @@
 import { Text, View, Image, ScrollView } from "react-native";
 import React from "react";
-import { SafeAreaView } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 import imgae from "../constants/images";
 import CustomButton from "../components/CustomButton";
 import { StatusBar } from "expo-status-bar";
+import { router } from "expo-router";
 
 const App = () => {
   return (
@@ -37,7 +38,11 @@ const App = () => {
               Limitless Exploration with Aora
             </Text>
           </View>
-          <CustomButton title={"Continue with email"} otherStyle="mt-10 py-3" />
+          <CustomButton
+            onPress={() => router.push("/sign-in")}
+            title={"Continue with email"}
+            otherStyle="mt-10 py-3"
+          />
         </View>
       </ScrollView>
       <StatusBar style="light" />
