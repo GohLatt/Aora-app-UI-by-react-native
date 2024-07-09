@@ -9,10 +9,11 @@ const FormField = ({
   onChnageText,
   placeholder,
   keyboardType,
+  otherStyle,
 }) => {
   const [showPassword, setShowPassword] = useState(false);
   return (
-    <View>
+    <View className={otherStyle}>
       <Text className="text-gray-50 mb-2 text-[16px] font-semibold">
         {title}
       </Text>
